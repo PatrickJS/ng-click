@@ -1,0 +1,30 @@
+{
+  "name": "ng-click",
+  "version": "0.0.1",
+  "main": "lib/ng-click.js",
+  "description": "Passive URL shortening for Angular.JS",
+  "homepage": "ng-click.com",
+  "bugs": "https://github.com/gdi2290/ng-click/issues",
+  "author": {
+    "name": "PatrickJS",
+    "email": "Patrick@gdi2290.com",
+    "url": "www.gdi2290.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gdi2290/ng-click"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.0"
+  }
+}
