@@ -1,11 +1,11 @@
 {
   "name": "ng-click",
   "version": "0.0.1",
-  "main": "lib/ng-click.js",
+  "main": "server.js",
   "description": "Passive URL shortening for Angular.JS",
   "keywords": [
     "ng-click",
-    "url shortener"
+    "url shortener",
     "angular",
     "ngclick"
   ],
