@@ -3,11 +3,17 @@
   "version": "0.0.1",
   "main": "lib/ng-click.js",
   "description": "Passive URL shortening for Angular.JS",
-  "homepage": "ng-click.com",
+  "keywords": [
+    "ng-click",
+    "url shortener"
+    "angular",
+    "ngclick"
+  ],
+  "homepage": "https://github.com/gdi2290/ng-click",
   "bugs": "https://github.com/gdi2290/ng-click/issues",
   "author": {
     "name": "PatrickJS",
-    "email": "Patrick@gdi2290.com",
+    "email": "github@gdi2290.com",
     "url": "www.gdi2290.com"
   },
   "repository": {
