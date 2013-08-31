@@ -13,7 +13,7 @@ var ngclick = {
   service: process.env.SERVICE || 'google',
 
   searchDomain: process.env.SEARCH_DOMAIN || 'docs.angularjs.org',
-  fallbackURL:  process.env.FALLBACK_URL  || 'http://docs.angularjs.org/api/',
+  fallbackURL:  process.env.FALLBACK_URL  || 'http://docs.angularjs.org/guide/overview',
 
   serviceURLs: {
     google: 'http://google.com/search?btnI&q=', // Use btnI to enable "I'm feeling lucky"
