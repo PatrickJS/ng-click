@@ -1,4 +1,4 @@
-# ng-click [![Build Status](https://secure.travis-ci.org/gdi2290/ng-click.png?branch=master)](http://travis-ci.org/gdi2290/ng-click)
+# ng-click.com [![Build Status](https://secure.travis-ci.org/gdi2290/ng-click.png?branch=master)](http://travis-ci.org/gdi2290/ng-click) this is a fork of [mdn.io](https://github.com/gdi2290/mdn.io)
 > The "I'm feeling lucky" URL shortener
 
 #### Use it in comments when explaining concepts
