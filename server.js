@@ -17,12 +17,13 @@ var ngclick = {
 
   serviceURLs: {
     google: 'http://google.com/search?btnI&q=', // Use btnI to enable "I'm feeling lucky"
-    bing:   'http://www.bing.com/search?q='
+    bing:   'http://www.bing.com/search?q=',
+    ddg:    'https://duckduckgo.com/?q=%21%20' // encodeURIComponent('! ') == %21%20
   },
 
   // Build search URL
   getSearchURL: function(query) {
-    return ngclick.serviceURLs[ngclick.service]+encodeURIComponent(query +' site:'+ ngclick.searchDomain);
+    return ngclick.serviceURLs[ngclick.service]+encodeURIComponent(query + ' site:' + ngclick.searchDomain);
   },
 
   // Decode the query
@@ -35,7 +36,7 @@ var ngclick = {
     var query = ngclick.getQuery(req.url);
     var url   = query ? ngclick.getSearchURL(query) : ngclick.fallbackURL;
 
-    console.log((query || '(empty query)')+' => '+url);
+    console.log((query || '(empty query)') + ' => ' + url);
 
     // Redirect to the URL
     res.writeHead(303, { 'Location': url });
@@ -50,10 +51,10 @@ var ngclick = {
     // Start a server
     http.createServer(ngclick.handleRequest).listen(ngclick.port);
 
-    console.log('mdn.io server running on port '+ngclick.port);
-    console.log('Search service: '+ngclick.service);
-    console.log('Domain: '+ngclick.searchDomain);
-    console.log('Default URL: '+ngclick.fallbackURL);
+    console.log('ng-click.com server running on port ' + ngclick.port);
+    console.log('Search service: ' + ngclick.service);
+    console.log('Domain: ' + ngclick.searchDomain);
+    console.log('Default URL: ' + ngclick.fallbackURL);
   }
 };
 
