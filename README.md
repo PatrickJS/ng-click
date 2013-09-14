@@ -4,7 +4,7 @@
 #### Use it in comments when explaining concepts
 
 ```javascript
-// Make sure transclusion (see http://ng-click.com/transclusion)
+// Make sure you understand transclusion (see http://ng-click.com/transclusion)
 angular.module('transclude', [])
  .directive('pane', function(){
     return {
@@ -12,7 +12,7 @@ angular.module('transclude', [])
       transclude: true,
       scope: { title:'@' },
       template: '<div style="border: 1px solid black;">' +
-                  '<div style="background-color: gray">{{title}}</div>' +
+                  '<div style="background-color: gray">{{ title }}</div>' +
                   '<div ng-transclude></div>' +
                 '</div>'
     };
